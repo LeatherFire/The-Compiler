@@ -5,5 +5,5 @@ Gereksinim Dağılımları bölümü, proje gereksinimlerini ve bunların kimler
 
 # Durum Seanaryoları Dağılımları
 
-1. [Yiğitcan Uçar'ın Gereksinimleri](yigitcanucarusecases.pdf)
-2. [Yiğit Aktürk'ün Gereksinimleri](yigitakturkusecases.pdf)
+1. [Yiğitcan Uçar'ın Durum Senaryoları Dağılımları](yigitcanucarusecases.pdf)
+2. [Yiğit Aktürk'ün Durum Senaryoları Dağılımları](yigitakturkusecases.pdf)
