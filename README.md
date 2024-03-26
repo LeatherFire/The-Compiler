@@ -30,8 +30,10 @@ Yiğit AKTÜRK, Yiğitcan UÇAR
 2. [Gereksinim Analizi](/gereksinimanalizi.md)
 3. [Durum Diyagramı](/durumdiyagrami.md)
 4. [Durum Senaryoları](/durumsenaryolari.md)
-5. [Veritabanı Diyagramı](veritabanidiyagrami.svg)
-6. [Frontend](/frontend.md)
-7. [Backend](/backend.md)
-8. [Test](/test.md)
-9. [Geliştrici ve Kullanıcı Dokümantasyonları](/dokumantasyon.md)
+5. **VERİTABANI DİYAGRAMI:**
+
+    ![Veritabanı Diyagramı](veritabanidiyagrami.png)
+7. [Frontend](/frontend.md)
+8. [Backend](/backend.md)
+9. [Test](/test.md)
+10. [Geliştrici ve Kullanıcı Dokümantasyonları](/dokumantasyon.md)
