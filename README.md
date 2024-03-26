@@ -28,9 +28,11 @@ Yiğit AKTÜRK, Yiğitcan UÇAR
 
 1. [Proje Planı](/projeplani.pdf)
 2. [Gereksinim Analizi](/gereksinimanalizi.md)
-3. [Durum Diyagramı](/durumdiyagrami.md)
-4. [Durum Senaryoları](/durumsenaryolari.md)
-5. **VERİTABANI DİYAGRAMI:**
+3. **DURUM DİYAGRAMI:**
+
+   ![Durum Diyagramı](durumdiyagrami.png)
+5. [Durum Senaryoları](/durumsenaryolari.md)
+6. **VERİTABANI DİYAGRAMI:**
 
     ![Veritabanı Diyagramı](veritabanidiyagrami.png)
 7. [Frontend](/frontend.md)
