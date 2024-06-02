@@ -19,5 +19,6 @@
 8. **En Çok Puan Alan Kodların Listelenmesi:**
    Platformda en yüksek puan alan Python kodlarının listelendiği işlevselliktir. Bu sayede kullanıcılar, platformdaki en başarılı ve popüler kodlara kolayca erişebilirler.
 
-9. **Kod Arama:**
-   Kullanıcıların platformdaki Python kodlarını arayabilmelerini sağlayan işlevselliktir. Bu sayede kullanıcılar, belirli bir konu veya problemle ilgili kodları kolayca bulabilirler.
+9. **Kodu Güncelleme:**
+   Kullanıcıların daha önce yazdıkları Python kodlarını güncelleyebilmelerini sağlayan işlevselliktir. Bu sayede kullanıcılar, hataları düzeltebilir veya kodlarını geliştirebilirler.
+
