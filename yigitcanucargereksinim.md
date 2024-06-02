@@ -16,9 +16,10 @@
 6. **Kod Silme:**
    Kullanıcıların daha önce yazdıkları Python kodlarını platformdan silmelerini sağlayan işlevselliktir. Bu sayede kullanıcılar, artık ihtiyaç duymadıkları veya gereksiz olan kodları kolayca temizleyebilirler.
 
-8. **En Çok Puan Alan Kodların Listelenmesi:**
-   Platformda en yüksek puan alan Python kodlarının listelendiği işlevselliktir. Bu sayede kullanıcılar, platformdaki en başarılı ve popüler kodlara kolayca erişebilirler.
+8. **Profil Bilgisi Güncelleme:**
+   Kullanıcıların profil bilgilerini güncelleyebilmelerini sağlayan işlevselliktir. Bu sayede kullanıcılar, değişen bilgilerini güncelleyebilir ve profil sayfalarını güncel tutabilirler.
 
-9. **Kodu Güncelleme:**
+
+10. **Kodu Güncelleme:**
    Kullanıcıların daha önce yazdıkları Python kodlarını güncelleyebilmelerini sağlayan işlevselliktir. Bu sayede kullanıcılar, hataları düzeltebilir veya kodlarını geliştirebilirler.
 
