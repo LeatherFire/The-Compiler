@@ -12,6 +12,7 @@ NEXT.js Çatısı Kullanıldı.
 9. Desktop Sayfası Footer ve Header
 10. Uyarı Modalları
 11. RightClickMenu Componenti
+12. PopUp İskeleti ve Terminal Komponenti
 
 # Yiğit Aktürk Tasarımlar #
 1. Favorilere Ekleme Favoriler Componenti
@@ -22,3 +23,4 @@ NEXT.js Çatısı Kullanıldı.
 6. Profil Bilgisi Güncelleme
 7. Kodu Güncelleme ModalUpdate Componenti
 8. Kodlara Yorum Yapma
+9. CodeEditor Komponenti ve iyileştirmeler
