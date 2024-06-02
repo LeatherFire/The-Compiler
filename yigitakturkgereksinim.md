@@ -16,8 +16,8 @@
 6. **Profil Bilgisi Güncelleme:**
    Kullanıcıların profil bilgilerini güncelleyebilmelerini sağlayan işlevselliktir. Bu sayede kullanıcılar, değişen bilgilerini güncelleyebilir ve profil sayfalarını güncel tutabilirler.
 
-7. **Kodu Güncelleme:**
-   Kullanıcıların daha önce yazdıkları Python kodlarını güncelleyebilmelerini sağlayan işlevselliktir. Bu sayede kullanıcılar, hataları düzeltebilir veya kodlarını geliştirebilirler.
+7. **Kod Arama:**
+   Kullanıcıların platformdaki Python kodlarını arayabilmelerini sağlayan işlevselliktir. Bu sayede kullanıcılar, belirli bir konu veya problemle ilgili kodları kolayca bulabilirler.
 
 8. **Kodlara Yorum Yapma:**
    Kullanıcıların platformdaki diğer kullanıcıların Python kodlarına yorum yapabilmelerini sağlayan işlevselliktir. Bu sayede kullanıcılar, kodların anlaşılması veya geliştirilmesi için geri bildirim sağlayabilirler.
