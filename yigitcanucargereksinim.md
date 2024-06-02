@@ -13,11 +13,11 @@
 5. **Kodlara Puan Verme:**
    Kullanıcıların platformdaki diğer kullanıcıların Python kodlarına puan verebilmelerini sağlayan işlevselliktir. Bu sayede kullanıcılar, diğer kullanıcıların kodlarını değerlendirebilir ve puanlayabilirler.
 
-6. **Kodlara Yorum Yapma:**
-   Kullanıcıların platformdaki diğer kullanıcıların Python kodlarına yorum yapabilmelerini sağlayan işlevselliktir. Bu sayede kullanıcılar, kodların anlaşılması veya geliştirilmesi için geri bildirim sağlayabilirler.
+6. **Kod Silme:**
+   Kullanıcıların daha önce yazdıkları Python kodlarını platformdan silmelerini sağlayan işlevselliktir. Bu sayede kullanıcılar, artık ihtiyaç duymadıkları veya gereksiz olan kodları kolayca temizleyebilirler.
 
-7. **En Çok Puan Alan Kodların Listelenmesi:**
+8. **En Çok Puan Alan Kodların Listelenmesi:**
    Platformda en yüksek puan alan Python kodlarının listelendiği işlevselliktir. Bu sayede kullanıcılar, platformdaki en başarılı ve popüler kodlara kolayca erişebilirler.
 
-8. **Kod Arama:**
+9. **Kod Arama:**
    Kullanıcıların platformdaki Python kodlarını arayabilmelerini sağlayan işlevselliktir. Bu sayede kullanıcılar, belirli bir konu veya problemle ilgili kodları kolayca bulabilirler.
