@@ -13,8 +13,8 @@
 5. **Profile Bilgisi Ekleme:**
    Kullanıcıların profil bilgilerini platforma ekleyebilmelerini sağlayan işlevselliktir. Bu sayede kullanıcılar, profil sayfalarını kişiselleştirebilir ve diğer kullanıcılara kendileri hakkında daha fazla bilgi verebilirler.
 
-6. **Profil Bilgisi Güncelleme:**
-   Kullanıcıların profil bilgilerini güncelleyebilmelerini sağlayan işlevselliktir. Bu sayede kullanıcılar, değişen bilgilerini güncelleyebilir ve profil sayfalarını güncel tutabilirler.
+6. **En Çok Puan Alan Kodların Listelenmesi:**
+   Platformda en yüksek puan alan Python kodlarının listelendiği işlevselliktir. Bu sayede kullanıcılar, platformdaki en başarılı ve popüler kodlara kolayca erişebilirler.
 
 7. **Kod Arama:**
    Kullanıcıların platformdaki Python kodlarını arayabilmelerini sağlayan işlevselliktir. Bu sayede kullanıcılar, belirli bir konu veya problemle ilgili kodları kolayca bulabilirler.
