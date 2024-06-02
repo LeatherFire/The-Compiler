@@ -26,16 +26,16 @@ PORT80
 Yiğit AKTÜRK, Yiğitcan UÇAR
 
 
-1. [Proje Planı](/projeplani.pdf)
-2. [Gereksinim Analizi](/gereksinimanalizi.md)
+1. [Proje Planı](/docs/projeplani.pdf)
+2. [Gereksinim Analizi](/docs/gereksinimanalizi.md)
 3. **DURUM DİYAGRAMI:**
 
-   ![Durum Diyagramı](durumdiyagrami.png)
-5. [Durum Senaryoları](/durumsenaryolari.md)
+   ![Durum Diyagramı](/docs/durumdiyagrami.png)
+5. [Durum Senaryoları](/docs/durumsenaryolari.md)
 6. **VERİTABANI DİYAGRAMI:**
 
-    ![Veritabanı Diyagramı](veritabanidiyagrami.png)
-7. [Frontend](/frontend.md)
-8. [Backend](/backend.md)
-9. [Test](/test.md)
-10. [Geliştrici ve Kullanıcı Dokümantasyonları](/dokumantasyon.md)
+    ![Veritabanı Diyagramı](/docs/veritabanidiyagrami.png)
+7. [Frontend](/docs/frontend.md)
+8. [Backend](/docs/backend.md)
+9. [Test](/docs/test.md)
+10. [Geliştirici ve Kullanıcı Dokümantasyonları](/docs/dokumantasyon.md)
