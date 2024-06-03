@@ -39,3 +39,4 @@ Yiğit AKTÜRK, Yiğitcan UÇAR
 8. [Backend](/docs/backend.md)
 9. [Test](/docs/test.md)
 10. [Geliştirici ve Kullanıcı Dokümantasyonları](/docs/dokumantasyon.md)
+11. [ÖNEMLİ NOT](/docs/onemlinot.md)
