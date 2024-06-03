@@ -8,7 +8,7 @@ import dbConnect from "../../../util/dbConnect";
 import bcrypt from "bcryptjs";
 dbConnect();
 
-export default NextAuth({
+export const authOptions = {
   /*  adapter: MongoDBAdapter(clientPromise), */
   providers: [
     GithubProvider({
@@ -17,7 +17,6 @@ export default NextAuth({
     }),
     CredentialsProvider({
       name: "Credentials",
-
       credentials: {
         username: { label: "Username", type: "text", placeholder: "jsmith" },
         password: { label: "Password", type: "password" },
@@ -40,7 +39,7 @@ export default NextAuth({
   },
   database: process.env.MONGODB_URI,
   secret: process.env.NEXTAUTH_SECRET,
-});
+};
 
 const signInUser = async ({ user, password }) => {
   const isMAtch = await bcrypt.compare(password, user.password);
@@ -49,3 +48,5 @@ const signInUser = async ({ user, password }) => {
   }
   return user;
 };
+
+export default NextAuth(authOptions);
