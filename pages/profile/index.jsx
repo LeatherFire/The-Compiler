@@ -6,7 +6,7 @@ export const getServerSideProps = async (context) => {
 
   if (session) {
     try {
-      const response = await axios.get(`api/users`, {
+      const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/users`, {
         headers: {
           Cookie: context.req.headers.cookie,
         },

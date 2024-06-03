@@ -32,7 +32,7 @@ const ModalUpdate = ({ id, onClose, code, languge }) => {
     const fetchCategories = async () => {
       try {
         const response = await axios.get(
-          `api/category`
+          `${process.env.NEXT_PUBLIC_API_URL}/category`
         );
         setCategoryList(response.data);
       } catch (error) {
@@ -97,7 +97,7 @@ const ModalUpdate = ({ id, onClose, code, languge }) => {
 
     try {
       await axios.post(
-        `api/codes/code`,
+        `${process.env.NEXT_PUBLIC_API_URL}/codes/code`,
         formData
       );
 

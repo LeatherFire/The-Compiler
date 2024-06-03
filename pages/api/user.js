@@ -1,16 +1,15 @@
-import { getServerSession } from "next-auth/next";
+import { getSession } from "next-auth/react";
 import User from "@/models/User";
 import dbConnect from "@/util/dbConnect";
-import { authOptions } from "./auth/[...nextauth]";
 
 export default async function handler(req, res) {
-  await dbConnect();
-
-  const session = await getServerSession(req, res, authOptions);
+  const session = await getSession({ req });
 
   if (!session) {
     return res.status(401).json({ message: "Unauthorized" });
   }
+
+  await dbConnect();
 
   const user = await User.findOne({ email: session.user.email }).select("-password");
 

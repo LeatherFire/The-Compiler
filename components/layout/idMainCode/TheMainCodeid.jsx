@@ -28,9 +28,9 @@ const TheMainCode = ({ id, onClose,user,codeId, onEdit}) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`api/codes/${newCodeId}`);
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/codes/${newCodeId}`);
         setCodeData(response.data);
-        const contributorsResponse = await axios.get(`api/contributors/${newCodeId}`);
+        const contributorsResponse = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/contributors/${newCodeId}`);
         setContributors(contributorsResponse.data);
         setLoading(false);
       } catch (error) {

@@ -19,7 +19,7 @@ const TerminalOutput = ({ width, height, codeId, user }) => {
         if (command === 'run') {
           try {
             term.pause(); // Terminali geçici olarak duraklat
-            const response = await fetch(`api/executeCode`, {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/executeCode`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',

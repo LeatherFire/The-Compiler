@@ -61,7 +61,7 @@ const Register = () => {
         
     
         toast.promise(
-            axios.post(`api/users/register`, data),
+            axios.post(`${process.env.NEXT_PUBLIC_API_URL}/users/register`, data),
             {
                 pending: 'Registering user...',
                 success: 'Welcome to WebOS',
@@ -273,7 +273,7 @@ const Register = () => {
 
 export const getServerSideProps = async (context) => {
     const session = await getSession(context);
-    const res = await axios.get(`api/users`);
+    const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/users`);
     const user = res.data?.find((user) => user.email === session?.user.email);
   
     if (session && user) {

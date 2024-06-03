@@ -69,7 +69,7 @@ const CodeBrowser = ({ width, height, onMain }) => {
     const fetchCategories = async () => {
       try {
         const response = await axios.get(
-          `api/category`
+          `${process.env.NEXT_PUBLIC_API_URL}/category`
         );
         setCategoryList(response.data);
       } catch (error) {
@@ -105,7 +105,7 @@ const CodeBrowser = ({ width, height, onMain }) => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `api/codes/allcodes`
+          `${process.env.NEXT_PUBLIC_API_URL}/codes/allcodes`
         );
         setAllCodes(response.data);
         setFilteredCodes(response.data); // Initially set filtered codes to all codes

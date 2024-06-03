@@ -22,7 +22,7 @@ const Favorites = ({ width, height,onMain }) => {
   useEffect(() => {
     const fetchFavorites = async () => {
       try {
-        const response = await axios.get(`api/favorites`);
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/favorites`);
         const iconMapping = {
           javascript: IoLogoJavascript,
           python: FaPython,
@@ -61,7 +61,7 @@ const Favorites = ({ width, height,onMain }) => {
 
   const handleFavoriteClick = async (favoriteId) => {
     try {
-      await axios.delete(`api/favorites`, {
+      await axios.delete(`${process.env.NEXT_PUBLIC_API_URL}/favorites`, {
         data: { codeId: favoriteId }
       });
       
