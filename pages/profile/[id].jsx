@@ -6,6 +6,8 @@ import TerminalProfile from '@/components/layout/TerminalProfile';
 import { useDispatch } from 'react-redux';
 import { getSession } from 'next-auth/react';
 import axios from 'axios';
+import { getServerSession } from "next-auth/next";
+import { authOptions } from "../api/auth/[...nextauth]";
 
 const Index = ({user}) => {
     const [size, setSize] = useState({ width: 571, height: 376 });
@@ -96,8 +98,8 @@ const Index = ({user}) => {
   )
 }
 
-export const getServerSideProps = async ({ req, params }) => {
-  const session = await getSession({ req });
+export const getServerSideProps = async ({ req, res, params }) => {
+  const session = await getServerSession(req, res, authOptions);
 
   if (!session) {
     return {
@@ -134,6 +136,11 @@ export const getServerSideProps = async ({ req, params }) => {
     });
     const user = userResponseById.data;
 
+    // `session.user.image` alanını kontrol edin ve `null` olarak ayarlayın
+    if (session.user && session.user.image === undefined) {
+      session.user.image = null;
+    }
+
     return {
       props: {
         session,
@@ -147,6 +154,7 @@ export const getServerSideProps = async ({ req, params }) => {
     };
   }
 };
+
 
 
 export default Index

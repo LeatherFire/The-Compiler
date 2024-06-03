@@ -4,6 +4,8 @@ import MenuBar from "@/components/layout/MenuBar";
 import Desktop from "@/components/layout/Desktop";
 import { getSession } from "next-auth/react";
 import axios from "axios";
+import { getServerSession } from "next-auth/next";
+import { authOptions } from "./api/auth/[...nextauth]";
 export default function Index({ user }) {
   return (
     <main >
@@ -12,8 +14,8 @@ export default function Index({ user }) {
   );
 }
 
-export const getServerSideProps = async ({ req }) => {
-  const session = await getSession({ req });
+export const getServerSideProps = async ({ req ,res}) => {
+  const session = await getServerSession(req, res, authOptions);
 
   if (!session) {
     return {
@@ -32,7 +34,9 @@ export const getServerSideProps = async ({ req }) => {
       },
     });
     const loggedInUser = userResponse.data;
-
+    if (session.user && session.user.image === undefined) {
+      session.user.image = null;
+    }
     return {
       props: {
         session,

@@ -272,11 +272,6 @@ const TerminalProfile = ({ width, height,user }) => {
   
   async function sendDataToAPI(term, newData) {
     try {
-      const session = await getSession();
-      if (!session) {
-        term.echo('Unauthorized.');
-        return;
-      }
   
       const userResponse = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/user`);
       const userId = userResponse.data._id;

@@ -6,6 +6,8 @@ import { useSession, signIn, getSession } from "next-auth/react";
 import { toast } from "react-toastify";
 import { useRouter } from "next/router";
 import axios from "axios";
+import { getServerSession } from "next-auth/next";
+import { authOptions } from "../api/auth/[...nextauth]";
 
 const Login = () => {
   const { data: session } = useSession();
@@ -255,22 +257,28 @@ const Login = () => {
 };
 
 export const getServerSideProps = async (context) => {
-  const session = await getSession(context);
+  const { req, res } = context;
+  const session = await getServerSession(req, res, authOptions);
   console.log("Session:", session);
-  const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/users`);
-  const user = res.data?.find((user) => user.email === session?.user.email);
 
-  if (session && user) {
-    return {
-      redirect: {
-        destination: "/profile/" + user._id,
-        permanent: false,
-      },
-    };
+  if (session) {
+    const userResponse = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/users`);
+    const user = userResponse.data?.find((user) => user.email === session?.user.email);
+
+    if (user) {
+      return {
+        redirect: {
+          destination: "/profile/" + user._id,
+          permanent: false,
+        },
+      };
+    }
   }
+
   return {
     props: {},
   };
 };
+
 
 export default Login;

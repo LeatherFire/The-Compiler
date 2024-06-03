@@ -3,6 +3,9 @@ import { getSession } from "next-auth/react";
 import { Typewriter } from "react-simple-typewriter";
 import Terminal from "./Terminal";
 import { useRouter } from 'next/router';
+import { getServerSession } from "next-auth/next";
+import { authOptions } from "../api/auth/[...nextauth]"; // authOptions'ı import ediyoruz
+
 const Index = () => {
     const router = useRouter();
   return (
@@ -119,8 +122,8 @@ const Index = () => {
   );
 };
 
-export const getServerSideProps = async ({ req, params }) => {
-  const session = await getSession({ req });
+export const getServerSideProps = async ({ req, res }) => {
+  const session = await getServerSession(req, res, authOptions);
 
   if (session) {
     return {
