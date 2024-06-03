@@ -142,7 +142,7 @@ const MainCodeContext = ({ width, height, codeData, contributors,onEdit }) => {
     // viewCount'u arttırmak için API çağrısı
     const incrementViewCount = async () => {
       try {
-        await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/viewcount/${codeData._id}`);
+        await axios.post(`api/viewcount/${codeData._id}`);
       } catch (error) {
         console.error("Error incrementing view count:", error);
       }

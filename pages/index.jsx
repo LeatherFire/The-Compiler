@@ -28,7 +28,7 @@ export const getServerSideProps = async ({ req, res }) => {
 
   // Oturumdaki kullanıcının verilerini al
   try {
-    const userResponse = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/user`, {
+    const userResponse = await axios.get(`api/user`, {
       headers: {
         Cookie: req.headers.cookie,
       },

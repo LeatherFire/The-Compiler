@@ -110,7 +110,7 @@ export const getServerSideProps = async ({ req, params }) => {
 
   // Oturumdaki kullanıcının verilerini al
   try {
-    const userResponse = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/user`, {
+    const userResponse = await axios.get(`api/user`, {
       headers: {
         Cookie: req.headers.cookie,
       },
@@ -127,7 +127,7 @@ export const getServerSideProps = async ({ req, params }) => {
       };
     }
 
-    const userResponseById = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/users/${params.id}`, {
+    const userResponseById = await axios.get(`api/users/${params.id}`, {
       headers: {
         Cookie: req.headers.cookie,
       },

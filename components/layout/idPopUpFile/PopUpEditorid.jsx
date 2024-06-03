@@ -41,7 +41,7 @@ const PopupEditor = ({ id, onClose, user, codeId, onExecute }) => {
       setLoading(true); // Yüklenme durumunu başlat
       try {
         const response = await axios.get(
-          `${process.env.NEXT_PUBLIC_API_URL}/codes/${newCodeId}`
+          `api/codes/${newCodeId}`
         );
 
         setCodeInfo(response.data);

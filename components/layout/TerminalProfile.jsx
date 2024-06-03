@@ -95,7 +95,7 @@ const TerminalProfile = ({ width, height,user }) => {
         if (isNaN(rating) || rating < 0 || rating > 5) {
           term.echo('Invalid rating. Please provide a number between 0 and 5.');
         } else {
-          axios.post(`${process.env.NEXT_PUBLIC_API_URL}/score`, { identifier, rating })
+          axios.post(`api/score`, { identifier, rating })
             .then(response => {
               term.echo(`Rating updated successfully: ${response.data.rating}`);
             })
@@ -278,11 +278,11 @@ const TerminalProfile = ({ width, height,user }) => {
         return;
       }
   
-      const userResponse = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/user`);
+      const userResponse = await axios.get(`api/user`);
       const userId = userResponse.data._id;
       const newStateData = { ...newData, password: '********' };
   
-      const updateResponse = await axios.put(`${process.env.NEXT_PUBLIC_API_URL}/users/${userId}`, newData);
+      const updateResponse = await axios.put(`api/users/${userId}`, newData);
       
       setUserData(newStateData);
       

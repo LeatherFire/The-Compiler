@@ -61,7 +61,7 @@ const Login = () => {
         event.target.reset();
   
         // Kullanıcı bilgilerini al
-        const userResponse = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/user`);
+        const userResponse = await axios.get(`api/user`);
         const user = userResponse.data;
   
         if (user && user._id) {
@@ -257,7 +257,7 @@ const Login = () => {
 export const getServerSideProps = async (context) => {
   const session = await getSession(context);
   console.log("Session:", session);
-  const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/users`);
+  const res = await axios.get(`api/users`);
   const user = res.data?.find((user) => user.email === session?.user.email);
 
   if (session && user) {

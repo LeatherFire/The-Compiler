@@ -15,7 +15,7 @@ const MyCodes = ({ width, height, searchQuery, onEdit, onMain }) => {
       setLoading(true); // Yüklenme durumunu başlat
       try {
         const response = await axios.get(
-          `${process.env.NEXT_PUBLIC_API_URL}/codes`
+          `api/codes`
         );
         setRows(response.data);
       } catch (error) {
@@ -41,11 +41,11 @@ const MyCodes = ({ width, height, searchQuery, onEdit, onMain }) => {
 
   const onDelete = async (id) => {
     try {
-      await axios.delete(`${process.env.NEXT_PUBLIC_API_URL}/codes/${id}`);
+      await axios.delete(`api/codes/${id}`);
       toast.info("Code deleted successfully");
       // Fetch the updated list after deletion
       const response = await axios.get(
-        `${process.env.NEXT_PUBLIC_API_URL}/codes`
+        `api/codes`
       );
       setRows(response.data);
     } catch (error) {
