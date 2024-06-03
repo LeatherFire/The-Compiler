@@ -3,12 +3,14 @@ import dbConnect from "@/util/dbConnect";
 import Code from "@/models/Code";
 import User from "@/models/User";
 import Category from "@/models/Category";
+import { getServerSession } from "next-auth/next";
+import { authOptions } from "../auth/[...nextauth]";
 
 
 const handler = async (req, res) => {
   await dbConnect();
 
-  const session = await getSession({ req });
+  const session = await getServerSession(req, res, authOptions);
 
   if (!session) {
     return res.status(401).json({ message: "Unauthorized" });
