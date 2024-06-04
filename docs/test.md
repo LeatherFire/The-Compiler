@@ -22,7 +22,12 @@
 
 
 # Yiğit Aktürk Test #
-1. ....
-2. ....
 
-Test Videosu Linki
+1. Favorilere Ekleme
+2. Favorileri Listeleme
+3. Kodları Kategoriye Ekleme
+4. Kodları Kategoriye Göre Listeleme
+5. Profil Bilgisi Ekleme
+6. En Çok Puan Alan Kodların Listelenmesi
+7. Kod Arama
+8. Kodlara Yorum Yapma
