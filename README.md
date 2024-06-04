@@ -15,7 +15,7 @@ Developer, IDE, Eğitim, Python, İşletim Sistemleri vb...
 
 **Uygulama Adresi:**
 
-[webos.live](https://webos.live)
+[webos.live](https://webos-git-main-yigitcan-ucars-projects.vercel.app)
 
 **Grup Adı:**
 
